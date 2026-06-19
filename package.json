@@ -1,12 +1,12 @@
 {
     "name": "ExtendScript",
-    "displayName": "ExtendScript",
-    "description": "Adobe ExtendScript Language Support for Visual Studio Code",
+    "displayName": "ExtendScript (+ VSCode Web support)",
+    "description": "Adobe ExtendScript Language Support for Visual Studio Code (included VSCode-Web version)",
     "version": "1.4.0",
-    "publisher": "Hennamann",
+    "publisher": "LazaroOnline",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Hennamann/ExtendScript-for-Visual-Studio-Code.git"
+        "url": "https://github.com/LazaroOnline/ExtendScript-for-Visual-Studio-Code.git"
     },
     "bugs": {
         "url": "https://github.com/Hennamann/ExtendScript-for-Visual-Studio-Code/issues"
@@ -235,6 +235,8 @@
         "build": "tsc -p .",
         "watch": "tsc -w -p .",
         "build:web": "esbuild src/extension.ts --bundle --external:vscode --format=cjs --platform=browser --outfile=dist/web/extension.js",
+        "vscode:prepublish": "npm run build && npm run build:web",
+        "package": "npx @vscode/vsce package",
         "lint": "tslint -c tslint.json \"src/**/*.ts\""
     },
     "devDependencies": {

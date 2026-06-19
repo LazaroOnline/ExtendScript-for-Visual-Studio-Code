@@ -4,6 +4,11 @@ It supports both .jsx and .jsxinc files.
 
 NOTE: This is not an official Adobe Extension! (But… Adobe devs may or may not be using it…)
 
+> This version by LazaroOnline is a fork from the original `ExtendScript` extension by "Ole Henrik Stabell" (Hennamann on GitHub).  
+> This version adds support for the web version of VSCode at https://vscode.dev/
+> in the desktop it should also work as always.
+
+
 ## Release Notes
 
 ### 1.0.0
@@ -34,6 +39,11 @@ Do note that the symbol support added is based on Javascript/Typescript, which m
 
 - Changed language server to the built in one to improve compatibility and fix random crashes. 
 - Added config options for the formatter, allowing you to specify how extendscript files should be formatted. e.g set indent size.
+
+### 1.4.0
+
+- Add support for the web version of VSCode at https://vscode.dev/
+
 
 ## TODO
 - [ ] Improve current Intellisense support, if possible.

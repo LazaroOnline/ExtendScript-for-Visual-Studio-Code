@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import * as beautify from 'js-beautify'
+import beautify = require('js-beautify');
 
 export async function activate(context: vscode.ExtensionContext): Promise<void> {
 
